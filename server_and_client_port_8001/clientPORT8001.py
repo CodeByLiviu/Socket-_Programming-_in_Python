@@ -11,6 +11,10 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(ADDR)
 
 def send(msg):
+    '''
+    This method is used to send messages to the server
+    msg: is a string 
+    '''
     message = msg.encode(FORMAT)
     print(message)
     msg_length = len(message)
